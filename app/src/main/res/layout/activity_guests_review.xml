@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review.ReviewGuestActivity">
+
+    <ScrollView
+        android:id="@+id/scrollv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/guest_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/no_profile_photo"
+                    app:civ_border_color="@color/colorSecondaryDark"
+                    app:civ_border_width="2dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="@color/colorSecondaryDark"
+                    app:civ_shadow_radius="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thank you"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/guest_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:paddingLeft="4dp"
+                            app:srcCompat="@drawable/start_black" />
+
+                        <TextView
+                            android:id="@+id/rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="-.-" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/box_top_soft_line"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <FrameLayout
+                    android:id="@+id/star_rating_fr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollv"
+        app:layout_constraintEnd_toEndOf="@+id/scrollv"
+        app:layout_constraintStart_toStartOf="@+id/scrollv">
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="16dp" />
+        <ProgressBar
+            android:id="@+id/review_submit_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

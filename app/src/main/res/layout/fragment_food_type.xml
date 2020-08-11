@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".utilities.FoodTypeFragment">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" android:layout_margin="0dp" android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp" android:layout_marginLeft="0dp" android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp" android:padding="0dp" android:paddingBottom="0dp" android:paddingEnd="0dp"
+            android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingStart="0dp" android:paddingTop="0dp"
+            android:layout_marginTop="0dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/vegetarian"
+                android:id="@+id/vegetarian"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toStartOf="@+id/vegan"
+                android:layout_marginEnd="0dp" android:layout_weight="0"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/vegan"
+                android:id="@+id/vegan"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cereal"
+        />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/cereal"
+                android:id="@+id/cereal" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/spicy"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/spicy"
+                android:id="@+id/spicy"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/fish"
+                android:id="@+id/fish" app:layout_constraintStart_toEndOf="@+id/spicy"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/meat"
+                android:id="@+id/meat"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toEndOf="@+id/fish"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/dairy"
+                android:id="@+id/dairy"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/meat"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

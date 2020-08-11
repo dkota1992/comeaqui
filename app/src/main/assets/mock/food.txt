@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "owner_id": 1,
+        "owner_username": "eduasinco@gmail.com",
+        "poster_first_name": "Eduardo\t",
+        "poster_last_name": "Rodriguez Perez",
+        "poster_email": "eduasinco@gmail.com",
+        "poster_image": "profile_photos/no-image.jpg",
+        "poster_phone_number": "",
+        "poster_phone_code": "34",
+        "poster_location": "",
+        "poster_lat": "0.0",
+        "poster_lng": "0.0",
+        "plate_name": "Paella Valenciana",
+        "price": 5.0,
+        "food_type": "1011011",
+        "description": "Esta hamburgesa puede ser perfectamente la mejor hamburgesa que vayas a probar en tu vida",
+        "food_photo": "/media/food_photos/no-image.jpg",
+        "created_at": "2019-06-20T15:33:09.130985Z",
+        "owner": 1
+    }
+]

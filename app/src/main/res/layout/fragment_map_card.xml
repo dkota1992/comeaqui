@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/whole_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map.MapCardFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/map_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:visibility="gone"
+        app:cardCornerRadius="2dp"
+        app:layout_behavior=".behaviors.DragDownHideBehavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/image_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"></FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/poster_image"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/no_profile_photo"
+                    app:civ_border_color="@color/colorSecondaryDark"
+                    app:civ_border_width="0dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="@color/colorSecondaryDark"
+                    app:civ_shadow_radius="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/poster_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:maxLines="1"
+                            android:text="Eduardo Rodriguez Perez"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorSecondaryDark"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/star"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/meal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="0"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:maxLines="1"
+                            android:text="@eduasinco"
+                            tools:layout_editor_absoluteX="130dp"
+                            tools:layout_editor_absoluteY="45dp" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/profile_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/star"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="18dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/star"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/container2"
+                android:name="com.gdevelopers.movies.movies.FragmentMoreMovies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/meal">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

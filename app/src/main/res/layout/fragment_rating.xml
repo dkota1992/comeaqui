@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".utilities.RatingFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/profile_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="5.0"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/star0"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/star_filled"
+            app:srcCompat="@drawable/star_empty"
+            tools:srcCompat="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/star_filled"
+            app:srcCompat="@drawable/star_empty"
+            tools:srcCompat="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/star_filled"
+            app:srcCompat="@drawable/star_empty"
+            tools:srcCompat="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/star_filled"
+            app:srcCompat="@drawable/star_empty"
+            tools:srcCompat="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/star_filled"
+            app:srcCompat="@drawable/star_empty"
+            tools:srcCompat="@drawable/star_empty" />
+
+        <TextView
+            android:id="@+id/rating_n"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="(5,357)"
+            android:textSize="10sp" />
+    </LinearLayout>
+</FrameLayout>

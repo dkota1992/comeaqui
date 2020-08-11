@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="14dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="ComeAquí"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/chat"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/notChat"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/messege_icon" />
+
+                                <TextView
+                                    android:id="@+id/notChat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:background="@drawable/box_notification"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="6dp"
+                                    android:text="3"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3"
+            app:layout_scrollFlags="scroll|snap"
+            tools:context=".MainActivity">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1 ">
+
+                        <FrameLayout
+                            android:id="@+id/map_frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/main_frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_weight="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="invisible"></FrameLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_nav"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/nav_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/map"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="1"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/food" />
+
+                                <TextView
+                                    android:id="@+id/not_map"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/box_notification"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="6dp"
+                                    android:text="1234"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="@+id/map"
+                                    app:layout_constraintStart_toStartOf="@+id/map" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/nav_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false">
+
+                                <ImageView
+                                    android:id="@+id/order"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="1"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/order" />
+
+                                <TextView
+                                    android:id="@+id/not_order"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/box_notification"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="6dp"
+                                    android:text="1234"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="@+id/order"
+                                    app:layout_constraintStart_toStartOf="@+id/order" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/nav_notifications"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false">
+
+                                <ImageView
+                                    android:id="@+id/notification"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="1"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/notification" />
+
+                                <TextView
+                                    android:id="@+id/not_not"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/box_notification"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="6dp"
+                                    android:text="1234"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="@+id/notification"
+                                    app:layout_constraintStart_toStartOf="@+id/notification" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/nav_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false">
+
+                                <TextView
+                                    android:id="@+id/not_profile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/box_notification"
+                                    android:gravity="center"
+                                    android:paddingStart="6dp"
+                                    android:paddingEnd="6dp"
+                                    android:text="1234"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="@+id/profile"
+                                    app:layout_constraintStart_toStartOf="@+id/profile" />
+
+                                <ImageView
+                                    android:id="@+id/profile"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_weight="1"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/profile" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

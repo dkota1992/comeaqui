@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026259336587",
+    "firebase_url": "https://chat-3eae5.firebaseio.com",
+    "project_id": "chat-3eae5",
+    "storage_bucket": "chat-3eae5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026259336587:android:e2d0ab13b3636f9e",
+        "android_client_info": {
+          "package_name": "com.comeaqui.eduardorodriguez.comeaqui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026259336587-3o42o9qbphf9j9nnvgb8t0n8q3lrsl42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjFjlFc7Tn4CU-hIj8QVqMpdqHmK1wHQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026259336587-3o42o9qbphf9j9nnvgb8t0n8q3lrsl42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".utilities.place_autocomplete.PlaceAutocompleteFragment">
+
+    <LinearLayout
+        android:id="@+id/wholePlaceACView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_input_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/my_locatoin_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/loc_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_transparent"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:inputType="textPersonName|textCapSentences" />
+
+                <ImageButton
+                    android:id="@+id/delete_text"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="0"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/close_map"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loading_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            tools:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/places_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="24dp"
+            android:visibility="gone">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>

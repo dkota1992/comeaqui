@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#525252</color>
+    <color name="colorPrimaryLight">#8F8F8F</color>
+    <color name="colorPrimaryLighter">#ECECEC</color>
+    <color name="colorPrimaryDim">#BBBBBB</color>
+    <color name="colorPrimary_trans">#5A5A5A</color>
+    <color name="colorSecondary">#C73800</color>
+    <color name="colorSecondary_trans">#B3C73800</color>
+    <color name="colorSecondaryDark">#992C00</color>
+
+
+    <color name="colorAccent">#B85200</color>
+    <color name="colorComeAqui">#b56628</color>
+    <color name="colorBackground">#FFFFFF</color>
+
+
+    <color name="grey">#797979</color>
+    <color name="grey_trans">#80000000</color>
+    <color name="grey_light">#F3F3F3</color>
+    <color name="grey_light2">#D1D1D1</color>
+    <color name="grey_lighter">#FAFAFA</color>
+
+    <color name="favourite">#FFBF00</color>
+
+    <color name="bottom_bottom">#17000000</color>
+    <color name="bottom_top">#FFFFFF</color>
+
+    <color name="success">#4CAF50</color>
+    <color name="canceled">#BE0D00</color>
+
+    <color name="delete">#FF0000</color>
+    <color name="d">#85FF0000</color>
+    <color name="confirm">#FF4CAF50</color>
+    <color name="swpe_list_element">#FFFFFF</color>
+
+    <color name="green_soft">#D5FFDB</color>
+
+    <color name="white_transparent">#74FFFFFF</color>
+
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+    <color name="black_trans80">#33000000</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_300">#E0E0E0</color>
+
+</resources>
+

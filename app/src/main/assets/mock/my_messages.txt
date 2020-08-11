@@ -1,0 +1,32 @@
+[
+    {
+        "id": 3,
+        "owner": "eduasinco@gmail.com",
+        "sender_first_name": "Edu",
+        "sender_last_name": "Perez",
+        "sender_email": "franpi@gmail.com",
+        "sender_image": "profile_photos/no-image.jpg",
+        "post_plate_name": "Algo con patatas",
+        "post_food_photo": "food_photos/no-image.jpg",
+        "post_price": "7.0",
+        "post_description": "Es un plato muy saludable",
+        "created_at": "2019-06-20T11:39:51.917976Z",
+        "sender": 2,
+        "post": 1
+    },
+    {
+        "id": 1,
+        "owner": "eduasinco@gmail.com",
+        "sender_first_name": "Edu",
+        "sender_last_name": "Perez",
+        "sender_email": "franpi@gmail.com",
+        "sender_image": "profile_photos/no-image.jpg",
+        "post_plate_name": "Hamburgesa 4 quesos",
+        "post_food_photo": "food_photos/no-image.jpg",
+        "post_price": "6.0",
+        "post_description": "Esta hamburgesa puede ser perfectamente la mejor hamburgesa que vayas a probar en tu vida",
+        "created_at": "2019-06-20T11:39:21.789212Z",
+        "sender": 2,
+        "post": 3
+    }
+]

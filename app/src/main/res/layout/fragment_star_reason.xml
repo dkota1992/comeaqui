@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review.StarReasonFragment">
+
+    <LinearLayout
+        android:id="@+id/rate_meal_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/star0"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/star_filled"
+                    app:srcCompat="@drawable/star_empty"
+                    tools:srcCompat="@drawable/star_empty" />
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/star_filled"
+                    app:srcCompat="@drawable/star_empty"
+                    tools:srcCompat="@drawable/star_empty" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/star_filled"
+                    app:srcCompat="@drawable/star_empty"
+                    tools:srcCompat="@drawable/star_empty" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/star_filled"
+                    app:srcCompat="@drawable/star_empty"
+                    tools:srcCompat="@drawable/star_empty" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/star_filled"
+                    app:srcCompat="@drawable/star_empty"
+                    tools:srcCompat="@drawable/star_empty" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/once_rate_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/rate_message1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="RATE MESSAGE"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rate_message2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="We regret hearing that. What was the issue?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/reason1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_thik_stroke_grey"
+                    android:gravity="center"
+                    android:text="Problem with host"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reason2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_thik_stroke_grey"
+                    android:gravity="center"
+                    android:text="Problem with food"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/reason3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_thik_stroke_grey"
+                    android:gravity="center"
+                    android:text="Problem with cleaning"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reason4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_thik_stroke_grey"
+                    android:gravity="center"
+                    android:text="Problem with payment"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/box_top_soft_line">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                <EditText
+                    android:id="@+id/review"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Write a review"
+                    android:inputType="textMultiLine|textCapSentences"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "last_login": "2019-06-19T10:31:41.590619Z",
+        "email": "eduasinco@gmail.com",
+        "first_name": "Eduardo",
+        "last_name": "Rodriguez Perez",
+        "bio": "",
+        "phone_number": "",
+        "phone_code": 34,
+        "location": "",
+        "lat": 0.0,
+        "lng": 0.0,
+        "deliver_radius": 500,
+        "profile_photo": "http://127.0.0.1:8000/media/profile_photos/ANDROID_bDCAvtx.png",
+        "is_active": true,
+        "is_admin": true
+    }
+]
